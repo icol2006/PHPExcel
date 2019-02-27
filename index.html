@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Wifis</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <h1>Claves Wifis</h1>
+    <div class="form">
+    <form action="guardar.php" method="POST">
+        
+        <p>Codigo</p>
+        <label for="codigo">Codigo</label>
+        <br>
+        <input type="text" name="codigo" placeholder="codigo" required>
+        <p>Nombre SSID</p>
+        <label for="nombre">Nombre SSID</label>
+        <br>
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <p>Contraseña SSID</p>
+        <label for="contraseña">Contraseña SSID</label>
+        <br>
+        <input type="text" name="contraseña" placeholder="Contraseña" required>
+        <p>Comentario</p>
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea name="Comentario"></textarea>
+        <br>
+        <br>
+        <input type="submit" vale="Enviar">
+    </form>
+
+    </div>
+    
+    <div id="imagen"><p><img src="img/router.jpg"></p></div>
+    <footer>
+        <p>Alvaro Achutegui &copy;</p>
+    </footer>
+</body>
+</html>

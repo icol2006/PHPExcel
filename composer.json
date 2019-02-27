@@ -1,0 +1,12 @@
+{
+    "name": "maykol/wifis",
+    "authors": [
+        {
+            "name": "maykokl",
+            "email": "maykolxx@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.6"
+    }
+}
