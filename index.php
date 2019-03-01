@@ -1,4 +1,10 @@
+<?php
+// Start the session
+session_start();
+require "excelFile.php";
+?>
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
@@ -12,11 +18,7 @@
 
 <body>
 
-<?php
-// Start the session
-session_start();
-require "excelFile.php";
-?>
+
 <!DOCTYPE html>
 <html>
 <body>
@@ -41,10 +43,7 @@ require "excelFile.php";
 
 }
 
-     /*  if(isset($_POST['Exportar'])){ //check if form was submitted
-           $excelFile=new ExcelFile($_SESSION["file"]);
-           $excelFile->DownlaodData();
-       }*/
+
 
 
 ?>
@@ -130,13 +129,10 @@ if(isset($_SESSION["file"]))
     <form action="index.php" method="post" enctype="multipart/form-data">
         Importar excel
         <input class="btn-md btn-primary" style="display:inline;margin-right: 20px" type="file" name="myfile" id="fileToUpload">
-        <input class="btn-md btn-primary" style="display:inline"  type="submit" name="submit" value="Impostar" >
+        <input class="btn-md btn-primary" style="display:inline"  type="submit" name="submit" value="Importar" >
     </form>    
 </div>
-             <form class="form-inline" method="post" action="index.php">
-                      <button name="Exportar" style="float:left;margin-left: 20px "  type="submit" class="btn-md btn-primary">Exportar Excel</button>
-
-             </form>
+   
          </td>
      </tr>
  </table>
@@ -288,4 +284,6 @@ $(".btnEliminar").click(function() {
 
 
 </script>
+
+
 </html>

@@ -5,7 +5,8 @@ require "netinfo.php";
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 use PhpOffice\PhpSpreadsheet\IOFactory;
-
+use PhpOffice\PhpSpreadsheet\Helper\Sample;
+require_once 'vendor\phpoffice\phpspreadsheet\src/Bootstrap.php';
 
 class ExcelFile
 {
